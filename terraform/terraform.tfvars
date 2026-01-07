@@ -1,0 +1,5 @@
+instance_type  = "t3.micro"
+key_name       = "my-ec2-key"
+bucket_name    = "chandbjs5fn5sek"
+dynamodb_table = "terraform-lock"
+region         = "us-east-1"
