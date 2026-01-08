@@ -1,0 +1,18 @@
+name: Test CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run test command
+        run: echo "GitHub Actions pipeline is working 🚀"
